@@ -15,7 +15,7 @@ class LRUCache:
     # to show that it was recently used.
     def get(self, key: int) -> int:
         if key not in self.cache:
-            return -1
+            return ''
         else:
             self.cache.move_to_end(key)
             return self.cache[key]
@@ -25,45 +25,22 @@ class LRUCache:
     # But here we will also check whether the length of our
     # ordered dictionary has exceeded our capacity,
     # If so we remove the first key (least recently used)
-    def put(self, key: int, value: int) -> None:
+    def set(self, key: int, value: int) -> None:
         self.cache[key] = value
         self.cache.move_to_end(key)
         if len(self.cache) > self.capacity:
             self.cache.popitem(last=False)
-    
-    def _remove(self, node):
-        p = node.prev
-        n = node.next
-        p.next = n
-        n.prev = p
-    def rem(self, key):
-        if key in self.dict:
-            node = self.dict[key]
-            self._remove(node)
-            del self.dict[key]
 
+    def rem(self, key):
+        if key in self.cache:
+            self.cache.pop(key)
 
 # RUNNER
 # initializing our cache with the capacity of 2
-cache = LRUCache(2)
-
-cache.put(1, 1)
-print(cache.cache)
-cache.put(2, 2)
-print(cache.cache)
-cache.get(1)
-print(cache.cache)
-cache.put(3, 3)
-print(cache.cache)
-cache.get(2)
-print(cache.cache)
-cache.put(4, 4)
-print(cache.cache)
-cache.get(1)
-print(cache.cache)
-cache.get(3)
-print(cache.cache)
-cache.get(4)
-print(cache.cache)
-
-# This code was contributed by Sachin Negi
+cache = LRUCache(100)
+cache.set('Jesse', 'Pinkman')
+cache.set('Walter', 'White')
+cache.set('Jesse', 'James')
+print(cache.get('Jesse')) # вернёт 'James'
+cache.rem('Walter')
+print(cache.get('Walter')) # вернёт ''
