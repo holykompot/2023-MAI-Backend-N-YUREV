@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b9dbb6-cce0-468c-90e2-ae10e9fc8161" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myproject/films/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/2023-MAI-Backend-N-YUREV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2023-MAI-Backend-N-YUREV.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/films/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/films/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/nickj/OneDrive/Документы/GitHub/2023-MAI-Backend-N-YUREV"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nickj/OneDrive/Документы/GitHub/2023-MAI-Backend-N-YUREV&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="2023-MAI-Backend-N-YUREV" />

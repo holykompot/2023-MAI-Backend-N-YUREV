@@ -1,0 +1,29 @@
+{% extends 'monitoring/base.html' %}
+ 
+{% block title %}Databases - {{ block.super }}{% endblock %}
+ 
+{% block content %}
+    <h1>Databases</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Host</th>
+                <th>Port</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for database in databases %}
+                <tr>
+                    <td><a href="{% url 'monitoring:database_detail' database.id %}">{{ database.name }}</a></td>
+                    <td>{{ database.get_db_type_display }}</td>
+                    <td>{{ database.host }}</td>
+                    <td>{{ database.port }}</td>
+                    <td>{{ database.owner }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

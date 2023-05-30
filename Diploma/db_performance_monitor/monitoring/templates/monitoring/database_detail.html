@@ -1,0 +1,34 @@
+{% extends 'monitoring/base.html' %}
+
+{% block title %}{{ database.name }} - {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h1>{{ database.name }}</h1>
+    <p>Type: {{ database.getdb_type_display }}</p>
+<p>Host: {{ database.host }}</p>
+<p>Port: {{ database.port }}</p>
+<p>Owner: {{ database.owner }}</p>
+<p>Additional Info: {{ database.additional_info }}</p>
+<h2>Metrics</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Metric</th>
+            <th>Value</th>
+            <th>Unit</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for metric in metrics %}
+            <tr>
+                <td>{{ metric.metric.name }}</td>
+                <td>{{ metric.value }}</td>
+                <td>{{ metric.metric.unit }}</td>
+                <td>{{ metric.timestamp }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

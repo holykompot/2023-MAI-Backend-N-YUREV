@@ -1,0 +1,25 @@
+{% extends 'monitoring/base.html' %}
+ 
+{% block title %}Metrics - {{ block.super }}{% endblock %}
+ 
+{% block content %}
+    <h1>Metrics</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for metric in metrics %}
+                <tr>
+                    <td>{{ metric.name }}</td>
+                    <td>{{ metric.description }}</td>
+                    <td>{{ metric.unit }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
